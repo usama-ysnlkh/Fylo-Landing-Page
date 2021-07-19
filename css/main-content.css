@@ -124,15 +124,15 @@ span a{
 .about-us a:hover, .contact-us a:hover{
     color: hsl(238, 22%, 44%);
 }
-.footer__social-icon i.fa-facebook:hover{
+.footer__social-icon i.fa-facebook:hover, .footer__social-icon i.fa-facebook:focus, .footer__social-icon i.fa-facebook:active{
     color: #3b5998;
     border-color: #3b5998;
 }
-.footer__social-icon i.fa-twitter:hover{
+.footer__social-icon i.fa-twitter:hover, .footer__social-icon i.fa-twitter:focus, .footer__social-icon i.fa-twitter:active{
     color: #00acee;
     border-color: #00acee;
 }
-.footer__social-icon i.fa-instagram:hover{
+.footer__social-icon i.fa-instagram:hover, .footer__social-icon i.fa-instagram:focus, .footer__social-icon i.fa-instagram:active{
     color: #DD2A7B;
     border-color: #DD2A7B;
 }
