@@ -1,0 +1,109 @@
+section{
+    box-sizing: border-box;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: center;
+    /* min-height: 75vh; */
+    min-width: 95vw;
+}
+section > div{
+    min-height: 100%;
+}
+section > div > img{
+    height: 50vh;
+    margin-left: 125px;
+    margin-top: 25px;
+}
+.float-left{
+    flex: 1 1 50%;
+}
+.float-right{
+    flex: 1 1 50%;
+}
+.float-left h2, p, input[type='submit'], .profile-picture h3, .inviting .text h2{
+    font-family: 'Raleway';
+}
+.float-left p, .main-left p{
+    line-height: 1.5;
+}
+.float-left {
+    line-height: 1.75;
+    margin-top: 3rem;
+}
+form input{
+    font-family: 'Raleway';
+}
+input[type='submit']{
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+    cursor: pointer;
+    width: 35%;
+    border: 1px solid hsl(224, 93%, 58%);
+}
+input[type='submit']:hover{
+    background-color: #7a9cfa;
+}
+input[type='email']{
+    width: 60%;
+}
+input[type='email'], input[type='submit']{
+    padding: 0.25rem 0.5rem;
+}
+.float-left > form{
+    margin: 1rem 0 0;
+}
+@media screen and (max-width: 800px) {
+    section{
+        overflow-x: hidden;
+        padding: 1rem 2rem;
+    }
+    section > div > img{
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width: 680px) {
+    section > div > img{
+        margin-top: 45px;
+    }
+    input[type='email'], input[type='submit']{
+        padding: 0.25rem 0.75rem;
+        width: 90%;
+    }
+    input[type='submit']{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section{
+        flex-direction: column;
+        padding: 1rem 1.75rem;
+    }  
+    section > div > img{
+        height: 45vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .float-right {
+        order: 1;
+    }
+    .float-left {
+        order: 2;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    .float-right, input[type='email'], input[type='submit']{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+}
+section~img{
+    margin-top: 25px;
+    margin-bottom: -10px;
+    width: 100%;
+    overflow-x: hidden;
+}
+

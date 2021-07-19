@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/* body{
+    display: flex;
+    flex-direction: column;
+} */
+nav{
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+.container{
+    display: flex;
+}
+.logo{
+    flex: 4 1 auto;
+    padding: 1rem 0 1rem 3rem;
+}
+.logo > img{
+    height: 3vh;
+}
+.nav-items{
+    flex: 8 2 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.nav-item{
+    padding: 1rem;
+    margin-right: 0.75rem;
+
+}
+.nav-items a{
+    text-decoration: none;
+    color: #000;
+    margin-top: 4px; 
+}
+/* Animation on hover from center */
+
+.nav-items a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 2px hsl(224, 93%, 58%);  
+    transform: scaleX(0);  
+    transition: transform 750ms ease-in-out;
+    
+}
+.nav-items a:hover::after, .nav-items a:focus::after, .nav-items a:active::after{
+    /* border-bottom: 2px solid hsl(224, 93%, 58%); */
+    transform: scaleX(1); 
+}
+
+/* Animation end */
+
+@media screen and (max-width: 800px) {
+    .logo{
+        padding: 1rem 2rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .logo{
+        padding: 0.75rem;
+    }
+    .nav-item{
+        padding: 0.75rem;
+        margin-right: 0.567rem;
+    }
+  }
